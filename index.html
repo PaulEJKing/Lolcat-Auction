@@ -1,0 +1,68 @@
+<!DOCTYPE html> <html><head>
+        <title>Lolcat Auction</title>
+    <style>.auction-item img {
+  width:150px;
+  border-radius: 10px;
+  border: 10px solid #131313;
+}
+
+.auction-item{
+    text-align: center;
+    font-family: Verdana;
+    /* float: left; */
+}
+
+#content {
+    margin-top: 100px;
+}
+
+#site-header{
+    background: #131313;
+    color: #f8f8f8;
+    position: fixed;
+    top:0px;
+    left:0px;
+    width:100%;
+}</style></head>
+    <body>
+    <div id="site-header">
+        <h1>Lolcat Auction Site</h1>
+    </div>
+    <div id="content">
+    <div class="auction-item" id="auction-1">
+        <h3>Lolcat</h3>
+        <img src="https://si.wsj.net/public/resources/images/OB-AO895_cheezb_20070824201312.gif">
+        <button onclick="buy(1)"> Buy</button>
+        </div>
+        <div class="auction-item" id="auction-2">
+        <h3>Lolcat</h3>
+        <img src="https://si.wsj.net/public/resources/images/OB-AO895_cheezb_20070824201312.gif">
+        <button onclick="buy(2)"> Buy</button>
+    </div>
+    <div class="auction-item" id="auction-3">
+        <h3>Lolcat</h3>
+        <img src="https://si.wsj.net/public/resources/images/OB-AO895_cheezb_20070824201312.gif">
+        <button onclick="buy(3)"> Buy</button>
+        </div>
+        <div class="auction-item" id="auction-4">
+        <h3>Lolcat</h3>
+        <img src="https://si.wsj.net/public/resources/images/OB-AO895_cheezb_20070824201312.gif">
+        <button onclick="buy(4)"> Buy</button>
+    </div>
+    </div>
+    
+<script>
+/*__POPCODESTART__*/
+function buy(auction_id) {
+  document.getElementById("auction-" + auction_id).childNodes.forEach(function (node) {
+    /**
+     * In practical terms, this traverses all child nodes of the div class
+     * "auction-1". Those nodes are h3, img and button. It is checking to 
+     * see which one is an image.
+     */
+    if (node instanceof HTMLImageElement) {
+      node.src = "http://www.debialleway.ca/hosted/websites/1709/images/20190207094129106_crop_image_2019038005083.jpg";
+    }
+  });
+}
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInBvcGNvZGVQcmV2aWV3LmpzIl0sIm5hbWVzIjpbImJ1eSIsImF1Y3Rpb25faWQiLCJkb2N1bWVudCIsImdldEVsZW1lbnRCeUlkIiwiY2hpbGROb2RlcyIsImZvckVhY2giLCJub2RlIiwiSFRNTEltYWdlRWxlbWVudCIsInNyYyJdLCJtYXBwaW5ncyI6IkFBQ0EsU0FBU0EsR0FBVCxDQUFhQyxVQUFiLEVBQXlCO0FBQ3JCQyxFQUFBQSxRQUFRLENBQUNDLGNBQVQsQ0FBd0IsYUFBV0YsVUFBbkMsRUFBK0NHLFVBQS9DLENBQTBEQyxPQUExRCxDQUFrRSxVQUFDQyxJQUFELEVBQVE7QUFDdEU7Ozs7O0FBS0EsUUFBR0EsSUFBSSxZQUFZQyxnQkFBbkIsRUFBcUM7QUFDakNELE1BQUFBLElBQUksQ0FBQ0UsR0FBTCxHQUFXLHNHQUFYO0FBQ0g7QUFDSixHQVREO0FBVUgiLCJzb3VyY2VzQ29udGVudCI6WyJcbmZ1bmN0aW9uIGJ1eShhdWN0aW9uX2lkKSB7XG4gICAgZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoXCJhdWN0aW9uLVwiK2F1Y3Rpb25faWQpLmNoaWxkTm9kZXMuZm9yRWFjaCgobm9kZSk9PntcbiAgICAgICAgLyoqXG4gICAgICAgICAqIEluIHByYWN0aWNhbCB0ZXJtcywgdGhpcyB0cmF2ZXJzZXMgYWxsIGNoaWxkIG5vZGVzIG9mIHRoZSBkaXYgY2xhc3NcbiAgICAgICAgICogXCJhdWN0aW9uLTFcIi4gVGhvc2Ugbm9kZXMgYXJlIGgzLCBpbWcgYW5kIGJ1dHRvbi4gSXQgaXMgY2hlY2tpbmcgdG8gXG4gICAgICAgICAqIHNlZSB3aGljaCBvbmUgaXMgYW4gaW1hZ2UuXG4gICAgICAgICAqL1xuICAgICAgICBpZihub2RlIGluc3RhbmNlb2YgSFRNTEltYWdlRWxlbWVudCkge1xuICAgICAgICAgICAgbm9kZS5zcmMgPSBcImh0dHA6Ly93d3cuZGViaWFsbGV3YXkuY2EvaG9zdGVkL3dlYnNpdGVzLzE3MDkvaW1hZ2VzLzIwMTkwMjA3MDk0MTI5MTA2X2Nyb3BfaW1hZ2VfMjAxOTAzODAwNTA4My5qcGdcIjtcbiAgICAgICAgfVxuICAgIH0pO1xufSJdfQ==</script></body></html>
